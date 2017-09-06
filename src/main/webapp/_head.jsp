@@ -16,7 +16,7 @@
 		<input type="button" value="搜 索"/>
 		<span id="goto">
 			<a id="goto_order" href="#">我的订单</a>
-			<a id="goto_cart" href="#">我的购物车</a>
+			<a id="goto_cart" href="<%= request.getContextPath() %>/cart.jsp">我的购物车</a>
 		</span>
 		<img id="erwm" src="<%= request.getContextPath() %>/img/head/qr.jpg"/>
 	</div>
@@ -24,7 +24,7 @@
 		<div id="content">
 			<ul>
 				<li><a href="#">首页</a></li>
-				<li><a href="#">全部商品</a></li>
+				<li><a href="<%= request.getContextPath() %>/prod_list.jsp">全部商品</a></li>
 				<li><a href="#">手机数码</a></li>
 				<li><a href="#">电脑平板</a></li>
 				<li><a href="#">家用电器</a></li>
