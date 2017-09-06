@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div id="total_2">
-			<a id="goto_order" href="javascript:void(0)">去结算</a>
+			<a id="goto_order" href="<%= request.getContextPath() %>/order_add.jsp">去结算</a>
 		</div>
 	</div>
 </div>

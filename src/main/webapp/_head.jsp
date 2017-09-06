@@ -15,7 +15,7 @@
 		<input type="text" name=""/>
 		<input type="button" value="搜 索"/>
 		<span id="goto">
-			<a id="goto_order" href="#">我的订单</a>
+			<a id="goto_order" href="<%= request.getContextPath() %>/order_list.jsp">我的订单</a>
 			<a id="goto_cart" href="<%= request.getContextPath() %>/cart.jsp">我的购物车</a>
 		</span>
 		<img id="erwm" src="<%= request.getContextPath() %>/img/head/qr.jpg"/>

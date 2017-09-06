@@ -21,7 +21,7 @@
 				<img id="rt_img" src="<%= request.getContextPath() %>/img/prodInfo/rt.jpg"/>
 			</div>
 		</div>
-		<form action="#"  method="post">
+		<form action="<%= request.getContextPath() %>/cart.jsp"  method="post">
 			<div id="right">
 				<div id="right_top">
 					<span id="prod_name">华为 荣耀6 Plus 标准版 双卡双待双通 移动4G 16GB存储（白色） <br/></span>
