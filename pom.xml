@@ -21,6 +21,12 @@
       <version>3.0-alpha-1</version>
       <scope>provided</scope>
     </dependency>
+    <!-- 使用C3P0对MySQL连接 -->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.1.2</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>mvn-easymall</finalName>
