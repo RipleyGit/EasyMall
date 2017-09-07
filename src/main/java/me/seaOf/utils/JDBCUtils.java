@@ -1,10 +1,16 @@
 package me.seaOf.utils;
 
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import me.seaOf.utils.DbUtils.ResultSetHandler;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.sql.DataSource;
-import java.sql.*;
+
+
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+import me.seaOf.utils.DbUtils.ResultSetHandler;
 
 public class JDBCUtils {
     private static ComboPooledDataSource pool = new ComboPooledDataSource();
@@ -29,7 +35,6 @@ public class JDBCUtils {
             throw new RuntimeException(e);
         }
     }
-
     /* query查询方法 */
     public static <T> T query(String sql, ResultSetHandler<T> rsh, Object... params) throws SQLException {
         Connection conn = null;
@@ -75,7 +80,6 @@ public class JDBCUtils {
         }
     }
 
-
     /**
      * 释放资源
      * @param conn 连接对象
@@ -103,10 +107,6 @@ public class JDBCUtils {
         }
         if(conn != null){
             try {
-				/*
-				 * 如果连接是通过c3p0连接池获取的, conn.close
-				 * 只是将连接还回连接池中, 并不关闭连接!!
-				 */
                 conn.close();
             } catch (SQLException e) {
                 e.printStackTrace();

@@ -8,8 +8,6 @@ import java.sql.ResultSet;
 
 public class BeanHandler<T> implements ResultSetHandler<T> {
     private Class clazz;
-    private PropertyDescriptor[] propertyDescriptors;
-    private PropertyDescriptor[] PropertyDescriptor[] pds;
 
     public BeanHandler(Class clazz){
         /**
@@ -40,11 +38,10 @@ public class BeanHandler<T> implements ResultSetHandler<T> {
                 try {
                     method.invoke(t,rs.getObject(name));
                 } catch (Exception e) {
-                    e.printStackTrace();
                     continue;
                 }
-                return t;
             }
+            return t;
         }
         return null;
     }

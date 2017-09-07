@@ -8,6 +8,7 @@
   <name>mvn-easymall Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+    <!--junit4测试依赖包-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -27,8 +28,32 @@
       <artifactId>c3p0</artifactId>
       <version>0.9.1.2</version>
     </dependency>
+    <!--MySQL数据库连接驱动-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.1</version>
+    </dependency>
+    <!--动态属性代码生成-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.16.6</version>
+    </dependency>
+
+
   </dependencies>
-  <build>
-    <finalName>mvn-easymall</finalName>
-  </build>
+    <build>
+        <finalName>mvn-easymall</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
 </project>
