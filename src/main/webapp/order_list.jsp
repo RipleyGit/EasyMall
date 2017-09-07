@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="<%= request.getContextPath() %>/css/orderList.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/orderList.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- 将头部(_head.jsp)包含进来 -->
@@ -28,11 +28,11 @@
 			<font color="red">未支付</font>&nbsp;&nbsp;|&nbsp;
 			<font color="blue">已支付</font>&nbsp;
 			<a href="#">
-				<img src="<%= request.getContextPath() %>/img/orderList/sc.jpg" width="69" height="19"/>
+				<img src="${ app }/img/orderList/sc.jpg" width="69" height="19"/>
 			</a>
 			&nbsp;
 			<a href="#">
-				<img src="<%= request.getContextPath() %>/img/orderList/zx.jpg" width="69" height="19">
+				<img src="${ app }/img/orderList/zx.jpg" width="69" height="19">
 			</a>
 			<br />
 			所属用户：xxx

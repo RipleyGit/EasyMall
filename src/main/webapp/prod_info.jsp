@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="<%= request.getContextPath() %>/css/prodInfo.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/prodInfo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- 将头部(_head.jsp)包含进来 -->
@@ -13,15 +13,15 @@
 	<div id="warp">
 		<div id="left">
 			<div id="left_top">
-				<img src="<%= request.getContextPath() %>/img/prodInfo/prod.jpg"/>
+				<img src="${ app }/img/prodInfo/prod.jpg"/>
 			</div>
 			<div id="left_bottom">
-				<img id="lf_img" src="<%= request.getContextPath() %>/img/prodInfo/lf.jpg"/>
-				<img id="mid_img" src="<%= request.getContextPath() %>/img/prodInfo/prod.jpg" width="60px" height="60px"/>
-				<img id="rt_img" src="<%= request.getContextPath() %>/img/prodInfo/rt.jpg"/>
+				<img id="lf_img" src="${ app }/img/prodInfo/lf.jpg"/>
+				<img id="mid_img" src="${ app }/img/prodInfo/prod.jpg" width="60px" height="60px"/>
+				<img id="rt_img" src="${ app }/img/prodInfo/rt.jpg"/>
 			</div>
 		</div>
-		<form action="<%= request.getContextPath() %>/cart.jsp"  method="post">
+		<form action="${ app }/cart.jsp"  method="post">
 			<div id="right">
 				<div id="right_top">
 					<span id="prod_name">华为 荣耀6 Plus 标准版 双卡双待双通 移动4G 16GB存储（白色） <br/></span>

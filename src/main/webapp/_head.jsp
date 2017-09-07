@@ -1,30 +1,30 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <!DOCTYPE HTML>
-<link rel="stylesheet" href="<%= request.getContextPath() %>/css/head.css"/>
+<link rel="stylesheet" href="${ app }/css/head.css"/>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 
 <div id="common_head">
 	<div id="line1">
 		<div id="content">
-			<a href="<%= request.getContextPath() %>/login.jsp">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-			<a href="<%= request.getContextPath() %>/regist.jsp">注册</a>
+			<a href="${ app }/login.jsp">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="${ app }/regist.jsp">注册</a>
 		</div>
 	</div>
 	<div id="line2">
-		<img id="logo" src="<%= request.getContextPath() %>/img/head/logo.jpg"/>
+		<img id="logo" src="${ app }/img/head/logo.jpg"/>
 		<input type="text" name=""/>
 		<input type="button" value="搜 索"/>
 		<span id="goto">
-			<a id="goto_order" href="<%= request.getContextPath() %>/order_list.jsp">我的订单</a>
-			<a id="goto_cart" href="<%= request.getContextPath() %>/cart.jsp">我的购物车</a>
+			<a id="goto_order" href="${ app }/order_list.jsp">我的订单</a>
+			<a id="goto_cart" href="${ app }/cart.jsp">我的购物车</a>
 		</span>
-		<img id="erwm" src="<%= request.getContextPath() %>/img/head/qr.jpg"/>
+		<img id="erwm" src="${ app }/img/head/qr.jpg"/>
 	</div>
 	<div id="line3">
 		<div id="content">
 			<ul>
 				<li><a href="#">首页</a></li>
-				<li><a href="<%= request.getContextPath() %>/prod_list.jsp">全部商品</a></li>
+				<li><a href="${ app }/prod_list.jsp">全部商品</a></li>
 				<li><a href="#">手机数码</a></li>
 				<li><a href="#">电脑平板</a></li>
 				<li><a href="#">家用电器</a></li>

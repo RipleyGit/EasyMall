@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="<%= request.getContextPath() %>/css/login.css"/>
+		<link rel="stylesheet" href="${ app }/css/login.css"/>
 		<title>EasyMall欢迎您登陆</title>
 	</head>
 	<body>

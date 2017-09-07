@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="<%= request.getContextPath() %>/css/prodList.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/prodList.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- 将头部(_head.jsp)包含进来 -->
@@ -20,7 +20,7 @@
 	</div>
 	<div id="prod_content">
 		<div class="prod_div">
-			<a href="<%= request.getContextPath() %>/prod_info.jsp"><img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img></a>
+			<a href="${ app }/prod_info.jsp"><img src="${ app }/img/prodlist/prod.jpg"></img></a>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -29,7 +29,7 @@
 			</div>
 			<div>
 				<div id="gotocart_div">
-					<a href="<%= request.getContextPath() %>/cart.jsp">加入购物车</a>
+					<a href="${ app }/cart.jsp">加入购物车</a>
 				</div>
 				<div id="say_div">
 					133人评价
@@ -37,24 +37,7 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -71,7 +54,24 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
+			<div id="prod_name_div">
+				华为荣耀6plus
+			</div>
+			<div id="prod_price_div">
+				￥2099元
+			</div>
+			<div>
+				<div id="gotocart_div">
+					<a href="#">加入购物车</a>
+				</div>
+				<div id="say_div">
+					133人评价
+				</div>
+			</div>
+		</div>
+		<div class="prod_div">
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -88,7 +88,7 @@
 			</div>
 		</div>
 		<div class="prod_div" style="margin-right: 0px;">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -105,7 +105,7 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -122,7 +122,7 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -139,7 +139,7 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -156,7 +156,7 @@
 			</div>
 		</div>
 		<div class="prod_div">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>
@@ -173,7 +173,7 @@
 			</div>
 		</div>
 		<div class="prod_div" style="margin-right: 0px;">
-			<img src="<%= request.getContextPath() %>/img/prodlist/prod.jpg"></img>
+			<img src="${ app }/img/prodlist/prod.jpg"></img>
 			<div id="prod_name_div">
 				华为荣耀6plus
 			</div>

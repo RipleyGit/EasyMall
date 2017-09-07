@@ -3,13 +3,13 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="<%= request.getContextPath() %>/css/addOrder.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/addOrder.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!-- 将头部(_head.jsp)包含进来 -->
 <%@include file="/_head.jsp" %>
 <div class="warp">
-	<form action="<%= request.getContextPath() %>/order_list.jsp" name="form1" method="post">
+	<form action="${ app }/order_list.jsp" name="form1" method="post">
 		<h3>增加订单</h3>
 		<div id="forminfo">
 			<span class="lf" style="vertical-align: middle;">收货地址：</span>

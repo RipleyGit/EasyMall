@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link href="<%= request.getContextPath() %>/css/cart.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/cart.css" rel="stylesheet" type="text/css">
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 </head>
 <body>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div id="total_2">
-			<a id="goto_order" href="<%= request.getContextPath() %>/order_add.jsp">去结算</a>
+			<a id="goto_order" href="${ app }/order_add.jsp">去结算</a>
 		</div>
 	</div>
 </div>
