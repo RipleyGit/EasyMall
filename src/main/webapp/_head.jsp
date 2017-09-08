@@ -1,4 +1,6 @@
+<%@page import="me.seaOf.bean.User" %>
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="${ app }/css/head.css"/>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
@@ -6,8 +8,18 @@
 <div id="common_head">
 	<div id="line1">
 		<div id="content">
-			<a href="${ app }/login.jsp">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-			<a href="${ app }/regist.jsp">注册</a>
+			<c:if test="${ empty sessionScope.user }">
+				<a href="${app}/login.jsp">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+				<a href="${app}/regist.jsp">注册</a>
+			</c:if>
+			<!-- 如果用户已经登陆了, 就提示欢迎xx回来 -->
+			<c:if test="${ !(empty sessionScope.user) }">
+				欢迎 ${ user.username } 回来,&nbsp;
+				<a href="${app}/servlet/LogoutServlet">退出</a>
+			</c:if>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+			<!-- 后台管理系统入口 -->
+			<a href="${app}/backend/manage.jsp">后台</a>
 		</div>
 	</div>
 	<div id="line2">

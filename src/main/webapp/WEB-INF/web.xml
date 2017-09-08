@@ -5,6 +5,15 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
   <display-name></display-name>
+    <!--配置自动登陆过滤器-->
+    <filter>
+        <filter-name>AutoLoginFilter</filter-name>
+        <filter-class>me.seaOf.filter.AutoLoginFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AutoLoginFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <!-- 配置全站乱码解决过滤器 -->
     <filter>
         <filter-name>EncodingFilter</filter-name>
