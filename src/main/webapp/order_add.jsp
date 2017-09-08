@@ -1,15 +1,16 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ page language="java" import="java.util.*" isELIgnored="false" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE HTML>
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="${ app }/css/addOrder.css" rel="stylesheet" type="text/css">
+	<link href="css/addOrder.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<!-- 将头部(_head.jsp)包含进来 -->
+<!-- 包含头部 -->
 <%@include file="/_head.jsp" %>
 <div class="warp">
-	<form action="${ app }/order_list.jsp" name="form1" method="post">
+	<form action="${app}/servlet/OrderAddServlet" name="form1" method="post">
 		<h3>增加订单</h3>
 		<div id="forminfo">
 			<span class="lf" style="vertical-align: middle;">收货地址：</span>
@@ -25,30 +26,30 @@
 				<th width="214">购买数量</th>
 				<th width="232">总价</th>
 			</tr>
-			<tr>
-				<td>四星手机</td>
-				<td>手机数码</td>
-				<td>998.0元</td>
-				<td>2件</td>
-				<td>1996.0元</td>
-			</tr>
-			<tr>
-				<td>阿斯蒂芬个</td>
-				<td>手机数码</td>
-				<td>123.0元</td>
-				<td>1件</td>
-				<td>123.0元</td>
-			</tr>
+			<c:set var="totalMoney" value="0"/>
+			<c:forEach items="${ cartmap }" var="entry">
+				<tr>
+					<td>
+						<img src="${app}/servlet/ProdImgServlet?imgurl=${entry.key.imgurl}"
+							 width="80px" height="80px"/>
+					</td>
+					<td>${ entry.key.name }</td>
+					<td>${ entry.key.price }元</td>
+					<td>${ entry.value }件</td>
+					<td>${ entry.key.price * entry.value }元</td>
+				</tr>
+				<c:set var="totalMoney"
+					   value="${ totalMoney + (entry.key.price * entry.value) }"/>
+			</c:forEach>
 		</table>
 
-		<div class="Order_price">总价：2119.0元</div>
-
+		<div class="Order_price">总价：${ totalMoney }元</div>
 		<div class="add_orderbox">
 			<input name="" type="submit" value="增加订单" class="add_order_but">
 		</div>
 	</form>
 </div>
-<!-- 将尾部(_foot.jsp)包含进来 -->
+<!-- 包含尾部 -->
 <%@include file="/_foot.jsp" %>
 </body>
 </html>
