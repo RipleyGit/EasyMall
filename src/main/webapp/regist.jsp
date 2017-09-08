@@ -29,9 +29,8 @@
 
                 //如果用户名不为空, 使用ajax检查用户名是否存在
                 var username = $(this).val();
-
                 /* 使用GET或POST方法实现ajax */
-                $.post("${app}"
+                $.post("${ app }"
                     +"/servlet/AjaxCheckUsernameServlet",
                     {"username": username}, function(result){
                         //处理响应结果
@@ -146,7 +145,7 @@
     工具在检查语法认为这个代码有问题, 其实没有错误!!
  -->
 
-<form onsubmit="return formObj.checkForm()" action="${app}/servlet/RegistServlet" method="POST">
+<form onsubmit="return formObj.checkForm()" action="${ app }/servlet/RegistServlet" method="POST">
 	<h1>欢迎注册EasyMall</h1>
 	<table>
 		<tr>

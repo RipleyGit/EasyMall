@@ -3,8 +3,10 @@ package me.seaOf.utils.DbUtils;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class BeanHandler<T> implements ResultSetHandler<T> {
     private Class clazz;
@@ -35,11 +37,13 @@ public class BeanHandler<T> implements ResultSetHandler<T> {
             for (PropertyDescriptor pd : pds) {
                 String name = pd.getName();
                 Method method = pd.getWriteMethod();
+
                 try {
                     method.invoke(t,rs.getObject(name));
                 } catch (Exception e) {
                     continue;
                 }
+
             }
             return t;
         }

@@ -7,6 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>mvn-easymall Maven Webapp</name>
   <url>http://maven.apache.org</url>
+    <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+    </plugin>
   <dependencies>
     <!--junit4测试依赖包-->
     <dependency>
@@ -46,6 +50,12 @@
         <artifactId>javax.servlet-api</artifactId>
         <version>3.1.0</version>
         <scope>provided</scope>
+    </dependency>
+    <!--JavaBean 依赖-->
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.8.3</version>
     </dependency>
   </dependencies>
     <build>
