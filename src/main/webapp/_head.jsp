@@ -44,9 +44,8 @@
 		<div id="content">
 			<ul>
 				<li><a href="#">首页</a></li>
-				<li><a href="${ app }/prod_list.jsp">全部商品</a></li>
-				<li><a href="#">手机数码</a></li>
-				<li><a href="#">电脑平板</a></li>
+				<li><a href="${ app }/servlet/ProdListByConditionServlet">全部商品</a></li>
+				<li><a href="${ app }/servlet/ProdListByConditionServlet?category=电脑平板"></a></li>
 				<li><a href="#">家用电器</a></li>
 				<li><a href="#">汽车用品</a></li>
 				<li><a href="#">食品饮料</a></li>
