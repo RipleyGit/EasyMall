@@ -24,7 +24,7 @@
 	<div id="prod_content">
 		<c:forEach items="${ list }" var="prod">
 		<div class="prod_div">
-			<a href="${ app }/prod_info.jsp">
+			<a href="${app}/servlet/ProdInfoServlet?pid=${prod.id}">
 				<img src="${app}/servlet/ProdImgServlet?imgurl=${prod.imgurl}"></img>
 			</a>
 			<div id="prod_name_div">
