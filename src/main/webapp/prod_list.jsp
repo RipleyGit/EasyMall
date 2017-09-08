@@ -37,7 +37,7 @@
 			</div>
 			<div>
 				<div id="gotocart_div">
-					<a href="${ app }/cart.jsp">加入购物车</a>
+					<a href="${app}/servlet/CartUpdateServlet?pid=${prod.id}&buyNum=1">加入购物车</a>
 				</div>
 				<div id="say_div">
 					133人评价

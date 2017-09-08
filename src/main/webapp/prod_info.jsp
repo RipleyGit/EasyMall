@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link href="${app}/css/prodInfo.css" rel="stylesheet" type="text/css">
-	<script src="${app}/js/jquery-1.4.2.js"></script>
+	<link href="${ app }/css/prodInfo.css" rel="stylesheet" type="text/css">
+	<script src="${ app }/js/jquery-1.4.2.js"></script>
 	<script>
         /* 文档就绪函数,在整个html文档加载完之后立即执行 */
         $(function(){
@@ -56,16 +56,16 @@
 	<div id="left">
 		<div id="left_top">
 			<!-- 商品的图片 -->
-			<img src="${app}/servlet/ProdImgServlet?imgurl=${prod.imgurl}"/>
+			<img src="${ app }/servlet/ProdImgServlet?imgurl=${ prod.imgurl }"/>
 		</div>
 		<div id="left_bottom">
-			<img id="lf_img" src="${app}/img/prodInfo/lf.jpg"/>
+			<img id="lf_img" src="${ app }/img/prodInfo/lf.jpg"/>
 			<!-- 商品的图片 -->
-			<img id="mid_img" src="${app}/servlet/ProdImgServlet?imgurl=${prod.imgurl}" width="60px" height="60px"/>
-			<img id="rt_img" src="${app}/img/prodInfo/rt.jpg"/>
+			<img id="mid_img" src="${ app }/servlet/ProdImgServlet?imgurl=${ prod.imgurl }" width="60px" height="60px"/>
+			<img id="rt_img" src="${ app }/img/prodInfo/rt.jpg"/>
 		</div>
 	</div>
-	<form action="${app}/servlet/CartUpdateServlet"  method="post">
+	<form action="${ app }/servlet/CartUpdateServlet"  method="post">
 		<div id="right">
 			<div id="right_top">
 				<span id="prod_name">${ prod.name }<br/></span>
@@ -90,7 +90,7 @@
 			</div>
 		</div>
 	</form>
-</div>
+	</div>
 <%@include file="/_foot.jsp" %>
 </body>
 </html>
