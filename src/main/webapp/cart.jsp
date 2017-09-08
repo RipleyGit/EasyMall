@@ -75,6 +75,7 @@
                 //>>获取商品的id和购买数量(newBuyNum)
                 var pid = $buyNumInp.attr("id");
                 //>>发送ajax请求
+				alert("hello");
                 $.post("${ app }/servlet/AjaxUpdateBuyNumServlet",
                     {"pid": pid, "buyNum" : newBuyNum});
 
