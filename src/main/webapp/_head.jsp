@@ -15,7 +15,7 @@
 			<!-- 如果用户已经登陆了, 就提示欢迎xx回来 -->
 			<c:if test="${ !(empty sessionScope.user) }">
 				欢迎 ${ user.username } 回来,&nbsp;
-				<a href="${app}/servlet/LogoutServlet">退出</a>
+				<a href="${ app }/srvlet/LogOutServlet">退出</a>
 			</c:if>
 			&nbsp;&nbsp;|&nbsp;&nbsp;
 			<!-- 后台管理系统入口 -->
