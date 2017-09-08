@@ -4,7 +4,15 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="${ app }/css/head.css"/>
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-
+<script type="text/javascript" src="${ app }/js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#search_btn").click(function(){
+            var search = $(this).prev("input").val();
+            window.location.href = "${ app }/servlet/ProdListBySearchServlet?search="+search;
+        });
+    });
+</script>
 <div id="common_head">
 	<div id="line1">
 		<div id="content">
@@ -19,13 +27,13 @@
 			</c:if>
 			&nbsp;&nbsp;|&nbsp;&nbsp;
 			<!-- 后台管理系统入口 -->
-			<a href="${app}/backend/manage.jsp">后台</a>
+			<a href="${ app }/backend/manage.jsp">后台</a>
 		</div>
 	</div>
 	<div id="line2">
 		<img id="logo" src="${ app }/img/head/logo.jpg"/>
 		<input type="text" name=""/>
-		<input type="button" value="搜 索"/>
+		<input id="search_btn" type="button" value="搜 索"/>
 		<span id="goto">
 			<a id="goto_order" href="${ app }/order_list.jsp">我的订单</a>
 			<a id="goto_cart" href="${ app }/cart.jsp">我的购物车</a>

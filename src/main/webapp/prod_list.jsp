@@ -11,21 +11,29 @@
 <div id="content">
 
 	<div id="search_div">
-		<form method="post" action="#">
-			<span class="input_span">商品名：<input type="text" name="name"/></span>
-			<span class="input_span">商品种类：<input type="text" name="category"/></span>
-			<span class="input_span">商品价格区间：<input type="text" name="minprice"/> - <input type="text" name="maxprice"/></span>
+		<form method="post" action="${app}/servlet/ProdListByConditionServlet">
+			<span class="input_span">商品名：<input type="text" name="name" value="${ param.name }"/></span>
+			<span class="input_span">商品种类：<input type="text" name="category" value="${ param.category }"/></span>
+			<span class="input_span">商品价格区间：
+					<input type="text" name="minprice" value="${ param.minprice }"/> -
+					<input type="text" name="maxprice" value="${ param.maxprice }"/></span>
 			<input type="submit" value="查 询">
+			<input type="reset" id="reset" value="重置">
 		</form>
 	</div>
 	<div id="prod_content">
+		<c:forEach items="${ list }" var="prod">
 		<div class="prod_div">
-			<a href="${ app }/prod_info.jsp"><img src="${ app }/img/prodlist/prod.jpg"></img></a>
+			<a href="${ app }/prod_info.jsp">
+				<img src="${app}/servlet/ProdImgServlet?imgurl=${prod.imgurl}"></img>
+			</a>
 			<div id="prod_name_div">
-				华为荣耀6plus
+				<a href="${app}/servlet/ProdInfoServlet?pid=${prod.id}">
+					${ prod.name }
+				</a>
 			</div>
 			<div id="prod_price_div">
-				￥2099元
+				${ prod.price }
 			</div>
 			<div>
 				<div id="gotocart_div">
@@ -36,162 +44,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div" style="margin-right: 0px;">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
-		<div class="prod_div" style="margin-right: 0px;">
-			<img src="${ app }/img/prodlist/prod.jpg"></img>
-			<div id="prod_name_div">
-				华为荣耀6plus
-			</div>
-			<div id="prod_price_div">
-				￥2099元
-			</div>
-			<div>
-				<div id="gotocart_div">
-					<a href="#">加入购物车</a>
-				</div>
-				<div id="say_div">
-					133人评价
-				</div>
-			</div>
-		</div>
+		</c:forEach>
 		<div style="clear: both"></div>
 	</div>
-
 </div>
 <!-- 将尾部(_foot.jsp)包含进来 -->
 <%@include file="/_foot.jsp" %>
