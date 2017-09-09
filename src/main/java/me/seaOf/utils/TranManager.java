@@ -8,7 +8,7 @@ public class TranManager {
         protected Connection initialValue(){
             return JDBCUtils.getConn();
         }
-    }
+    };
     private TranManager(){}
     public static Connection getConn(){
         return tl.get();

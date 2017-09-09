@@ -25,7 +25,7 @@ public class OrderServiceImpl implements OrderService {
             TranManager.startTran();
             //调用dao层的方法添加订单信息
             order_dao.addOrder(order);
-            for(OrderItem orderItem : list){
+            for(OrderItem orderItem : list) {
                 //检查购买数量(orderItem.buyNum)是否小于等于库存数量(Product.pnum)
                 //获取购买数量
                 int buyNum = orderItem.getBuynum();
@@ -35,27 +35,27 @@ public class OrderServiceImpl implements OrderService {
                 //>>查询商品信息
                 Product prod = prod_dao.findProdById(pid);
                 int pnum = prod.getPnum();
-                if(buyNum>pnum){//如果购买数量大于库存数量
+                if (buyNum > pnum) {//如果购买数量大于库存数量
                     throw new MsgException("库存数量不足, 订单添加失败!");
                 }
                 //调用dao层的方法添加订单项信息
                 order_dao.addOrderItem(orderItem);
                 //将购买数量从库存数量中扣除
-                prod_dao.updatePnum(pid, prod.getPnum()-buyNum);
-                //提交事务
-                TranManager.commitTran();
+                prod_dao.updatePnum(pid, prod.getPnum() - buyNum);
+            }
+            //提交事务
+            TranManager.commitTran();
         }catch(MsgException me){
                 //回滚事务
                 TranManager.rollbackTran();
                 throw me;
-            }finally{
+        }finally{
                 //关闭数据库连接
                 TranManager.releseTran();
-            }
-
         }
-
     }
+
+
 
     public List<OrderInfo> findOrderByUserId(int userId) {
         //1.通过Userid查询当前用户的所有订单信息
