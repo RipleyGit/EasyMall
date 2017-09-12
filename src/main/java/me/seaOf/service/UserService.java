@@ -3,7 +3,7 @@ package me.seaOf.service;
 import me.seaOf.bean.User;
 import me.seaOf.exception.MsgException;
 
-public interface UserService {
+public interface UserService extends Service{
     /**
      * 实现注册
      * @param user

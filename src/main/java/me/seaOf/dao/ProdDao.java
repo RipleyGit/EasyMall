@@ -4,7 +4,7 @@ import me.seaOf.bean.Product;
 
 import java.util.List;
 
-public interface ProdDao {
+public interface ProdDao extends Dao{
 
     /**
      * 查询所有商品信息, 返回所有商品组成的list集合

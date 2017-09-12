@@ -2,7 +2,7 @@ package me.seaOf.dao;
 
 import me.seaOf.bean.User;
 
-public interface UserDao {
+public interface UserDao extends Dao{
     /**
      * 根据用户名查询用户是否存在
      * @param username 用户名

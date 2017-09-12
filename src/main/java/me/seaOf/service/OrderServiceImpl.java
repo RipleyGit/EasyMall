@@ -19,39 +19,22 @@ import java.util.Map;
 public class OrderServiceImpl implements OrderService {
     private OrderDao order_dao = BasicFactory.getFactory().getInstance(OrderDao.class);
     private ProdDao prod_dao = BasicFactory.getFactory().getInstance(ProdDao.class);
+
     public void addOrder(Order order, List<OrderItem> list) throws MsgException {
-        try{
-            //开始事务
-            TranManager.startTran();
-            //调用dao层的方法添加订单信息
-            order_dao.addOrder(order);
-            for(OrderItem orderItem : list) {
-                //检查购买数量(orderItem.buyNum)是否小于等于库存数量(Product.pnum)
-                //获取购买数量
-                int buyNum = orderItem.getBuynum();
-                //获取库存数量
-                //>>获取商品id
-                String pid = orderItem.getProduct_id();
-                //>>查询商品信息
-                Product prod = prod_dao.findProdById(pid);
-                int pnum = prod.getPnum();
-                if (buyNum > pnum) {//如果购买数量大于库存数量
-                    throw new MsgException("库存数量不足, 订单添加失败!");
-                }
-                //调用dao层的方法添加订单项信息
-                order_dao.addOrderItem(orderItem);
-                //将购买数量从库存数量中扣除
-                prod_dao.updatePnum(pid, prod.getPnum() - buyNum);
+        //向order表中添加一条记录
+        order_dao.addOrder(order);
+        //遍历list
+        for (OrderItem orderItem : list) {
+            //根据商品的id查询商品的信息，重载一个添加的方法
+            Product prod = prod_dao.findProdById(orderItem.getProduct_id());
+            //判断库存是否不足
+            if (prod.getPnum()<orderItem.getBuynum()){
+                throw new MsgException("商品库存不足："+prod.getId()+","+prod.getName()+","+prod.getPnum());
             }
-            //提交事务
-            TranManager.commitTran();
-        }catch(MsgException me){
-                //回滚事务
-                TranManager.rollbackTran();
-                throw me;
-        }finally{
-                //关闭数据库连接
-                TranManager.releseTran();
+            //库存充足，修改商品库存
+            prod_dao.updatePnum(prod.getId(), (prod.getPnum()-orderItem.getBuynum()));
+            //向orderitem表中添加一条数据
+            order_dao.addOrderItem(orderItem);
         }
     }
 

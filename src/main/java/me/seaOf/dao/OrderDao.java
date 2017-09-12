@@ -5,7 +5,7 @@ import me.seaOf.bean.OrderItem;
 
 import java.util.List;
 
-public interface OrderDao {
+public interface OrderDao extends Dao{
     /**
      * 添加订单信息(orders表)
      * @param order 订单信息

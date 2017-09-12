@@ -4,7 +4,7 @@ import me.seaOf.bean.Product;
 
 import java.util.List;
 
-public interface ProdService {
+public interface ProdService extends Service{
     /**
      * 查询所有商品, 返回所有商品组成的list集合
      * @return List<Product>

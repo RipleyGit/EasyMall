@@ -41,7 +41,7 @@ public class JDBCUtils {
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
-            conn = pool.getConnection();
+            conn = TranManager.getConn();
             ps = conn.prepareStatement(sql);
             if(params != null){//设置sql参数
                 for (int i = 0; i < params.length; i++) {
@@ -53,8 +53,6 @@ public class JDBCUtils {
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);
-        }finally{
-            close(conn, ps, rs);
         }
     }
 
@@ -64,7 +62,7 @@ public class JDBCUtils {
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
-            conn = pool.getConnection();
+            conn = TranManager.getConn();
             ps = conn.prepareStatement(sql);
             if(params != null){
                 for (int i = 0; i < params.length; i++) {
@@ -75,8 +73,6 @@ public class JDBCUtils {
         } catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException(e);
-        }finally{
-            close(conn, ps, rs);
         }
     }
 
