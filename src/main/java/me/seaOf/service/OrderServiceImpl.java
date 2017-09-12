@@ -9,6 +9,7 @@ import me.seaOf.dao.OrderDao;
 import me.seaOf.dao.ProdDao;
 import me.seaOf.exception.MsgException;
 import me.seaOf.factory.BasicFactory;
+import me.seaOf.utils.JDBCUtils;
 import me.seaOf.utils.TranManager;
 
 import java.util.ArrayList;
@@ -76,4 +77,29 @@ public class OrderServiceImpl implements OrderService {
         return orderInfoList;
     }
 
+    @Override
+    public void deleteOrderById(String oid) throws MsgException {
+        //根据订单id查询订单详情
+        Order order = order_dao.findOrderById(oid);
+        //判断是否存在，不存在抛出异常
+        if (order == null){
+            throw new MsgException("当前订单不存在，已删除！");
+        }
+        //判断是否支付，已支付抛出异常
+        if(order.getPaystate() != 0){
+            throw new MsgException("只有未支付的订单才能删除！");
+        }
+        //根据订单id查询该订单所有的订单条目
+        List<OrderItem> orderItem = order_dao.findOrderItemByOrderId(oid);
+        if (orderItem != null) {
+            for (OrderItem item : orderItem) {
+                //遍历：修改对应商品的库存
+                prod_dao.changePnum(item.getProduct_id(),item.getBuynum());
+            }
+        }
+        //删除orderitem订单id所对应所有订单项
+        order_dao.deleteOrderItemById(oid);
+        //删除orders对应的一条订单数据
+        order_dao.deleteOrderById(oid);
+    }
 }

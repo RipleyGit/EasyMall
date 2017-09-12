@@ -4,7 +4,19 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<link href="${app}/css/orderList.css" rel="stylesheet" type="text/css">
+	<link href="${ app }/css/orderList.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="${ app }/js/jquery-1.4.2.js"></script>
+	<script>
+		$(function () {
+			$(".del").click(function () {
+			    if(confirm("您确定删除该订单吗？")){
+					var oid = $(this).attr("id");
+					alert(oid);
+					window.location.href="${ app }/servlet/OrderDeleteServlet?id="+oid;
+				}
+			});
+        });
+	</script>
 </head>
 <body>
 <!-- 包含头部 -->
@@ -37,11 +49,11 @@
 			<c:if test="${ orderInfo.order.paystate == 1 }">
 				<font color="blue">已支付</font>&nbsp;&nbsp;
 			</c:if>
-			<a href="#">
-				<img src="${app}/img/orderList/sc.jpg" width="69" height="19"/>
+			<a href="javascript:void(0)" class="del" id="${ orderInfo.order.id }">
+					<img src="${app}/img/orderList/sc.jpg" width="69" height="19"/>
 			</a>
 			&nbsp;
-			<a href="#">
+			<a href="${app}/pay.jsp?oid=${ orderInfo.order.id }&money=${ orderInfo.order.money }">
 				<img src="${app}/img/orderList/zx.jpg" width="69" height="19">
 			</a>
 			<br />

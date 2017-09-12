@@ -2,6 +2,7 @@ package me.seaOf.dao;
 
 import me.seaOf.bean.Order;
 import me.seaOf.bean.OrderItem;
+import me.seaOf.utils.DbUtils.BeanHandler;
 import me.seaOf.utils.DbUtils.BeanListHandler;
 import me.seaOf.utils.JDBCUtils;
 
@@ -49,6 +50,40 @@ public class OrderDaoImpl implements OrderDao {
         try {
             String sql = "select * from orderitem where order_id=?";
             return JDBCUtils.query(sql, new BeanListHandler<OrderItem>(OrderItem.class), orderId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public Order findOrderById(String oid) {
+        String sql = "select * from orders where id = ?";
+        try {
+            return JDBCUtils.query(sql,new BeanHandler<Order>(Order.class),oid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    @Override
+    public void deleteOrderById(String oid) {
+        String sql = "delete from orders where id=?";
+        try {
+            JDBCUtils.update(sql, oid);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void deleteOrderItemById(String oid) {
+        String sql = "delete from orderitem where order_id=?";
+        try {
+            JDBCUtils.update(sql, oid);
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);

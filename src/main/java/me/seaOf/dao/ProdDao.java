@@ -49,5 +49,11 @@ public interface ProdDao extends Dao{
      */
     Product findProdById(String pid);
 
+    /**
+     * 根据商品的id 修改商品的库存
+     * @param product_id
+     * @param buynum
+     */
+    void changePnum(String product_id, int buynum);
 }
 

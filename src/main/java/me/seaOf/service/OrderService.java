@@ -25,4 +25,11 @@ public interface OrderService extends Service {
      */
     List<OrderInfo> findOrderByUserId(int id);
 
+    /**
+     * 根据订单号删除订单
+     * @param oid 订单id
+     * @return
+     */
+    @Tran
+    void deleteOrderById(String oid) throws  MsgException;
 }

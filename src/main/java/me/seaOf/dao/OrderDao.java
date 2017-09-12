@@ -31,4 +31,27 @@ public interface OrderDao extends Dao{
      * @return
      */
     List<OrderItem> findOrderItemByOrderId(String id);
+
+
+
+    /**
+     * 根据订单id查询订单
+     * @param oid
+     * @return
+     */
+    Order findOrderById(String oid);
+
+    /**
+     * 根据订单号删除订单
+     * @param oid 订单id
+     * @return
+     */
+    void deleteOrderById(String oid);
+
+    /**
+     * 根据订单id 删除item订单项信息
+     * @param oid
+     * @return
+     */
+    void deleteOrderItemById(String oid);
 }

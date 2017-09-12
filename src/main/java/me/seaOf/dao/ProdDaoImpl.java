@@ -72,5 +72,16 @@ public class ProdDaoImpl implements ProdDao {
         }
     }
 
+    @Override
+    public void changePnum(String product_id, int buynum) {
+        String sql = "update products set pnum=pnum+? where id=?";
+        try {
+            JDBCUtils.update(sql, buynum,product_id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
 }
 
