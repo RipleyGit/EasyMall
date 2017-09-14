@@ -1,16 +1,22 @@
 package me.seaOf.bean;
 
 import lombok.Data;
+import me.seaOf.anno.Column;
 import me.seaOf.exception.MsgException;
 import me.seaOf.utils.WebUtils;
 
 @Data
 public class User {
+    @Column("用户ID")
     private int id;
+    @Column("用户姓名")
     private String username;
+    @Column("用户密码")
     private String password;
     private String password2;
+    @Column("账户名")
     private String nickname;
+    @Column("Email")
     private String email;
 
     public void checkData() throws MsgException {

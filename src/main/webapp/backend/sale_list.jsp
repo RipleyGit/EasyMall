@@ -22,7 +22,7 @@ th {
 <body>
 <%@include file="../_head.jsp"%>
 	<h1>销售榜单</h1>
-	<a href="${app}/servlet/DownloadSalesServlet">销售榜单下载</a>
+	<a href="${app}/servlet/DownSaleInfoServlet">销售榜单下载</a>
 	<hr>
 
 	<table bordercolor="black" border="1" width="95%" cellspacing="0px" cellpadding="5px">

@@ -60,4 +60,5 @@ public interface OrderService extends Service {
      * @return  销售榜单列表集合
      */
     List<SaleInfo> finSaleInfos();
+
 }

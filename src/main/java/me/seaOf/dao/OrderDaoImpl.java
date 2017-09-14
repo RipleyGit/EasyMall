@@ -118,6 +118,5 @@ public class OrderDaoImpl implements OrderDao {
             return new ArrayList<SaleInfo>();
         }
     }
-
 }
 

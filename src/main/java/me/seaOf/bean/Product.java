@@ -1,16 +1,24 @@
 package me.seaOf.bean;
 
 import lombok.Data;
+import me.seaOf.anno.Column;
 
 import java.io.Serializable;
 @Data
 public class Product implements Serializable {
+    @Column("商品ID")
     private String id;
+    @Column("商品名称")
     private String name;
+    @Column("商品价格")
     private double price;
+    @Column("商品分类")
     private String category;
+    @Column("图片路径")
     private String imgurl;
+    @Column("库存数量")
     private int	pnum;
+    @Column("商品描述")
     private String description;
 
     /* 重写hashcode方法 */
