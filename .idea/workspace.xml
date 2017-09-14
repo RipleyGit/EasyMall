@@ -10,47 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aaaeea56-9a7c-41fa-9a24-be17da6c19be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/error/404.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/error/500.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/01gs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/02zs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/03js.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/04ny.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/05zg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/06jt.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/07hx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/08xy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/09gd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/10sz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/11ms.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/12sh.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/13zx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/14gd.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/15cq.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/pay/16bh.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/utils/PaymentUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/utils/PropUtils.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/SaleListServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/CallbackServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/PayServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/res/merchantInfo.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PropUtilsTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/500.jsp" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/confirm.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/confirm.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/pay.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/pay.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDao.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/OrderDeleteServlet.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/OrderDeleteServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/backend/_left.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/backend/_left.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/order_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/order_list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,81 +57,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="confirm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/confirm.jsp">
+      <file leaf-file-name="sale_list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="258">
+              <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaleListServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BeanListHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaleInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SaleListServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/SaleListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prod_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/prod_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3373">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/manage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_top.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/_top.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_left.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/_left.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoLoginFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/AutoLoginFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/factory/BasicFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -174,18 +103,8 @@
       <file leaf-file-name="OrderDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
-              <caret line="112" column="37" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sale_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+            <state relative-caret-position="264">
+              <caret line="110" column="42" lean-forward="true" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -232,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/ProdInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/CartUpdateServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/prod_info.jsp" />
         <option value="$PROJECT_DIR$/src/main/test/me/seaOf/listener/MyHttpSessionListenerTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -275,14 +192,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/pay.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/PayServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/confirm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/sale_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/backend/_left.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/SaleListServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java" />
       </list>
     </option>
   </component>
@@ -528,7 +447,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="seaOf" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seaOf" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="DbUtils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="seaOf" type="462c0819:PsiDirectoryNode" />
+              <item name="web_back" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
@@ -1141,7 +1079,7 @@
       <workItem from="1505299958008" duration="4000" />
       <workItem from="1505300223236" duration="21000" />
       <workItem from="1505300577566" duration="21000" />
-      <workItem from="1505351784467" duration="2710000" />
+      <workItem from="1505351784467" duration="5960000" />
     </task>
     <task id="LOCAL-00001" summary="EasyMall前端主页静态页面">
       <created>1504698363691</created>
@@ -1297,7 +1235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505200210162</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="使用易宝支付第三方插件，实现在线支付功能，及对应的页面">
+      <created>1505355473788</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1505355473788</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1333,7 +1278,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138355000" />
+    <option name="totallyTimeSpent" value="141605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1346,7 +1291,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3530962" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
@@ -1361,10 +1305,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33992094" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22075783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.7844156" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22239032" sideWeight="0.7844156" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.21558441" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24641834" sideWeight="0.4125" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.21558441" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.21558441" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1466,7 +1410,8 @@
     <MESSAGE value="为订单添加增加事务管理；防止垃圾订单产生；导致数据增加无用数据。新键一个事务管理的工具类。" />
     <MESSAGE value="添加事务管理，新建一个Tran注解标注事务的注解，在OrderService中的add方法添加注解，在BasicFactory中拦截事务注解并实现事务的实现。service接口与dao接口为标识接口不实现具体的功能。" />
     <MESSAGE value="使用事务管理，删除用户的订单" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用事务管理，删除用户的订单" />
+    <MESSAGE value="使用易宝支付第三方插件，实现在线支付功能，及对应的页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用易宝支付第三方插件，实现在线支付功能，及对应的页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1489,6 +1434,13 @@
           <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <dependency leave-enabled="true" master-id="0" />
+          <url>file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanHandler.java</url>
           <line>27</line>
@@ -1497,13 +1449,21 @@
           </properties>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java</url>
+          <line>17</line>
+          <properties class="me.seaOf.utils.DbUtils.BeanListHandler" method="handle">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="java-exception">
-          <dependency id="1" />
+          <dependency id="0" />
           <properties />
         </breakpoint>
         <breakpoint type="javascript-exception">
@@ -1511,7 +1471,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="147" />
+      <option name="time" value="153" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1524,13 +1484,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/4e5cfea/176d0583-b4db-4270-9770-96dd24883e84/easymall.user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1757,12 +1710,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="116" column="28" lean-forward="false" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
-          <folding>
-            <element signature="e#3681#3682#0" expanded="true" />
-            <element signature="e#3744#3745#0" expanded="true" />
-            <element signature="e#3802#3803#0" expanded="true" />
-            <element signature="e#3850#3851#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1790,42 +1738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/order_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/confirm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="112" column="37" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1878,11 +1794,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/order_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/SaleListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="26" column="40" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="37" column="40" lean-forward="false" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="110" column="42" lean-forward="true" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

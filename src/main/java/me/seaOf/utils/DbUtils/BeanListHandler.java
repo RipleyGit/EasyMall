@@ -43,7 +43,13 @@ public class BeanListHandler<T> implements ResultSetHandler<List<T>> {
                 //acc.setId(rs.getObject("id"))
                 try {
                     //2.6.将结果集中的数据封装到Bean对象(t)中
-                    method.invoke(t, rs.getObject(name));
+                    Object val = null;
+                    if (pd.getPropertyType() == int.class){
+                        val = rs.getInt(name);
+                    }else{
+                        val = rs.getObject(name);
+                    }
+                    method.invoke(t, val);
                 } catch (Exception e) {
                     continue;
                 }

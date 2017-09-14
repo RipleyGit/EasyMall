@@ -105,12 +105,12 @@ public class OrderDaoImpl implements OrderDao {
 
     @Override
     public List<SaleInfo> findSaleInfos() {
-        String sql = "SELECT pd.id prod_id,pd.name prod_name,SUM(oi.buynum) sale_num\n" +
-                "FROM products pd,orderitem oi,orders od\n" +
-                "WHERE pd.id = oi.product_id\n" +
-                "AND oi.order_id=od.id\n" +
-                "GROUP BY prod_id\n" +
-                "ORDER BY sale_num\n";
+        String sql = "SELECT pd.id prod_id,pd.name prod_name,SUM(oi.buynum) sale_num " +
+                "FROM products pd,orderitem oi,orders od " +
+                "WHERE pd.id = oi.product_id " +
+                "AND oi.order_id=od.id " +
+                "GROUP BY prod_id " +
+                "ORDER BY sale_num";
         try {
             return JDBCUtils.query(sql,new BeanListHandler<SaleInfo>(SaleInfo.class));
         } catch (SQLException e) {

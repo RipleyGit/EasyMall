@@ -45,7 +45,7 @@
 			<div><a href="${app}/servlet/BackProdListServlet" target="rightFrame">&gt; 用户管理</a></div>
 			<div><a href="${app}/servlet/BackProdListServlet" target="rightFrame">&gt; 权限管理</a></div>
 			<div><a href="${app}/servlet/BackProdListServlet" target="rightFrame">&gt; 订单管理</a></div>
-			<div><a href="${app}/servlet/BackProdListServlet" target="rightFrame">&gt; 销售榜单</a></div>
+			<div><a href="${app}/servlet/SaleListServlet" target="rightFrame">&gt; 销售榜单</a></div>
 		</div>		
 	</body>
 </html>
