@@ -30,7 +30,7 @@ public class OrderDeleteServlet extends HttpServlet {
         }
         //设置定时跳转
         resp.setHeader("refresh", "2;url="+
-                request.getContextPath()+
+                req.getContextPath()+
                 "/servlet/OrderListServlet");
     }
 

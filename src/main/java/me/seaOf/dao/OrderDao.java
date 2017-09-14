@@ -2,6 +2,7 @@ package me.seaOf.dao;
 
 import me.seaOf.bean.Order;
 import me.seaOf.bean.OrderItem;
+import me.seaOf.bean.SaleInfo;
 
 import java.util.List;
 
@@ -54,4 +55,16 @@ public interface OrderDao extends Dao{
      * @return
      */
     void deleteOrderItemById(String oid);
+    /**
+     *根据订单号更新订单的支付状态
+     * @param r6_order
+     * @param i
+     */
+    void updatePayStateByOid(String r6_order, int state);
+
+    /**
+     * 查询所有销售榜单列表
+     * @return  销售榜单列表集合
+     */
+    List<SaleInfo> findSaleInfos();
 }

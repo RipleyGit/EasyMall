@@ -11,7 +11,6 @@
 			$(".del").click(function () {
 			    if(confirm("您确定删除该订单吗？")){
 					var oid = $(this).attr("id");
-					alert(oid);
 					window.location.href="${ app }/servlet/OrderDeleteServlet?id="+oid;
 				}
 			});

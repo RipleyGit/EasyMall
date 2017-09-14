@@ -2,11 +2,13 @@ package me.seaOf.dao;
 
 import me.seaOf.bean.Order;
 import me.seaOf.bean.OrderItem;
+import me.seaOf.bean.SaleInfo;
 import me.seaOf.utils.DbUtils.BeanHandler;
 import me.seaOf.utils.DbUtils.BeanListHandler;
 import me.seaOf.utils.JDBCUtils;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OrderDaoImpl implements OrderDao {
@@ -87,6 +89,33 @@ public class OrderDaoImpl implements OrderDao {
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public void updatePayStateByOid(String r6_order, int state) {
+        String sql = "update orders set paystate=? where id=?";
+        try {
+            JDBCUtils.update(sql,state,r6_order);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    public List<SaleInfo> findSaleInfos() {
+        String sql = "SELECT pd.id prod_id,pd.name prod_name,SUM(oi.buynum) sale_num\n" +
+                "FROM products pd,orderitem oi,orders od\n" +
+                "WHERE pd.id = oi.product_id\n" +
+                "AND oi.order_id=od.id\n" +
+                "GROUP BY prod_id\n" +
+                "ORDER BY sale_num\n";
+        try {
+            return JDBCUtils.query(sql,new BeanListHandler<SaleInfo>(SaleInfo.class));
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return new ArrayList<SaleInfo>();
         }
     }
 
