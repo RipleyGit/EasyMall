@@ -18,6 +18,7 @@ public class User {
     private String nickname;
     @Column("Email")
     private String email;
+    private String role;
 
     public void checkData() throws MsgException {
         // >>非空校验

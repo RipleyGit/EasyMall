@@ -54,7 +54,7 @@ public class RegistServlet extends HttpServlet {
 
             //对password md5加密后再存入数据库
             user.setPassword(WebUtils.md5(user.getPassword()));
-
+            user.setRole("user");
             // 4.实现注册(将用户信息保存进数据库)
             UserService service = BasicFactory.getFactory().getInstance(
                     UserService.class);
