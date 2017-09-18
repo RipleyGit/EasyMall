@@ -9,42 +9,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" line="63" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaaeea56-9a7c-41fa-9a24-be17da6c19be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_10_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/anno/Column.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/utils/PoiUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownSaleInfoServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mvn_easymall_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mvn_easymall_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_impl_1_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_taglibs_taglibs_standard_spec_1_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_6.xml" />
+    <list default="true" id="aaaeea56-9a7c-41fa-9a24-be17da6c19be" name="Default" comment="后台销售榜单的显示，技术难点：从orders中把数据搜索提取出来封装层saleInfo对象，使用sql语句中的设置列表名；使用sum计算过的数值在rs返回值中的类型时bigdecimal格式 无法直接转换成int型，所以rs.get方法时必须直接使用getInt()方法来获取数值。这时就需在执行方法之前做一个类型判断 int的类型判断应使用int.class">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-easymall.iml" afterPath="$PROJECT_DIR$/mvn-easymall.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Order.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Product.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java" afterPath="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/res/c3p0-config.xml" afterPath="$PROJECT_DIR$/src/main/java/resources/c3p0-config.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/res/conf.properties" afterPath="$PROJECT_DIR$/src/main/java/resources/conf.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/res/merchantInfo.properties" afterPath="$PROJECT_DIR$/src/main/java/resources/merchantInfo.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,12 +56,52 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PoiUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/PoiUtils.java">
+    <leaf>
+      <file leaf-file-name="PrivFilter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/PrivFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+            <state relative-caret-position="76">
+              <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="c3p0-config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resources/c3p0-config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDBCUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/JDBCUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="843">
+              <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,96 +109,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/mvn_easymall_Web_exploded/404.jsp">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownSaleInfoServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownSaleInfoServlet.java">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+            <state relative-caret-position="380">
+              <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoiUtilsTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java">
+      <file leaf-file-name="UserDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/UserDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#373#383#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="114">
+              <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/Product.java">
+      <file leaf-file-name="EncodingFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/EncodingFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state relative-caret-position="338">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaleInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java">
+      <file leaf-file-name="AutoLoginFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/AutoLoginFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderItem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/OrderItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/OrderInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="365">
+              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -233,11 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/res/conf.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/cart.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/order_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/OrderListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/_head.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/BackProdDelServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/BackProdListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/BackProdPnumUpdateServlet.java" />
@@ -278,12 +240,17 @@
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/anno/Column.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/utils/PoiUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/backend/sale_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownSaleInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc049f1e-3795-4264-8309-c4a1a63c48e3/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cc049f1e-3795-4264-8309-c4a1a63c48e3/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/dao/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/seaOf/filter/PrivFilter.java" />
       </list>
     </option>
   </component>
@@ -333,11 +300,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1485" />
-    <option name="y" value="4" />
-    <option name="width" value="1456" />
-    <option name="height" value="904" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="192" />
+    <option name="y" value="56" />
+    <option name="width" value="1444" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -487,33 +454,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
               <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn_easymall_Web_exploded" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
@@ -541,14 +490,30 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="seaOf" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EasyMall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EasyMall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -561,6 +526,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="SearchEverywhereHistoryKey" value="data&#9;ACTION&#9;ActivateDatabaseToolWindow" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -570,23 +536,23 @@
       <recent name="me.seaOf.web_font" />
       <recent name="me.seaOf.bean" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\java\me\seaOf" />
-      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\webapp" />
-      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\java\res" />
-      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\webapp\img" />
-      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\webapp\css" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="junit.framework.TestCase" />
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\webapp\backend" />
       <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\resources" />
       <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\java" />
       <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main" />
       <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\IdeaProjects\EasyMall\src\main\webapp\WEB-INF" />
+      <recent name="E:\WorkSpace\IdeaProjects\EasyMall\sql" />
+      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\java\me\seaOf" />
+      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\webapp" />
+      <recent name="E:\WorkSpaces\IdeaProjects\EasyMall\src\main\java\res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1066,11 +1032,11 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat7" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.t8" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.OrderDaoImplTest.daoTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.OrderDaoImplTest.testDao" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PropUtilsTest.testProp" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PoiUtilsTest.testUtils" />
-      <item index="6" class="java.lang.String" itemvalue="Application.POIDemo" />
+      <item index="2" class="java.lang.String" itemvalue="Application.POIDemo" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.OrderDaoImplTest.daoTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.OrderDaoImplTest.testDao" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PropUtilsTest.testProp" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.PoiUtilsTest.testUtils" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1133,6 +1099,9 @@
       <workItem from="1505351784467" duration="11499000" />
       <workItem from="1505374803588" duration="299000" />
       <workItem from="1505375324223" duration="13252000" />
+      <workItem from="1505713344669" duration="189000" />
+      <workItem from="1505713633050" duration="2196000" />
+      <workItem from="1505730296504" duration="3861000" />
     </task>
     <task id="LOCAL-00001" summary="EasyMall前端主页静态页面">
       <created>1504698363691</created>
@@ -1338,7 +1307,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160695000" />
+    <option name="totallyTimeSpent" value="166941000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1350,31 +1319,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1485" y="4" width="1456" height="904" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3492823" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3564815" sideWeight="0.5121029" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39506173" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28781793" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33992094" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22075783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21131805" sideWeight="0.76637167" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21131805" sideWeight="0.23362832" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.21558441" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27847221" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24364123" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3716475" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3490683" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33913043" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28751576" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22075783" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17836677" sideWeight="0.7378049" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17836677" sideWeight="0.2621951" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22239032" sideWeight="0.21558441" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1382,7 +1356,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290469" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1460,7 +1434,7 @@
       </breakpoints-dialog>
       <default-breakpoints>
         <breakpoint type="java-exception">
-          <dependency id="0" />
+          <dependency id="1" />
           <properties />
         </breakpoint>
         <breakpoint type="javascript-exception">
@@ -1468,7 +1442,7 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="161" />
+      <option name="time" value="173" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1481,122 +1455,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/500.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/404.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/4e5cfea/176d0583-b4db-4270-9770-96dd24883e84/easymall.orderitem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/junit/framework/TestCase.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/dao/UserDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/4e5cfea/176d0583-b4db-4270-9770-96dd24883e84/easymall.orders">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/dao/OrderDaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/_head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="68" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/JDBCUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="55" column="9" lean-forward="false" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/OrderDeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/PaymentUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="33" column="75" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="33" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/CallbackServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="59" column="55" lean-forward="false" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/merchantInfo.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/conf.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/utils/PropUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/PropUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/PayServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="46" lean-forward="false" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/500.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1604,7 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1612,7 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1073">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +1480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1628,7 +1487,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1636,7 +1494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-231">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1644,14 +1501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="47" column="56" lean-forward="false" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/AutoLoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1659,7 +1508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
           <caret line="30" column="45" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,7 +1515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1675,7 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2300">
           <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1683,7 +1529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1472">
           <caret line="68" column="35" lean-forward="false" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1703,23 +1548,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/DbUtils/BeanListHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1727,7 +1559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1735,7 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1743,25 +1573,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/POIDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/POIDemo.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/service/OrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1769,29 +1588,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/OrderItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="95">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/OrderInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="95">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="114">
           <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
@@ -1799,7 +1617,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="323">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding />
         </state>
@@ -1807,39 +1625,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/SaleInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        <state relative-caret-position="209">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownLoadServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownSaleInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="37" column="64" lean-forward="false" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/mvn_easymall_Web_exploded/404.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/PoiUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="35" column="88" lean-forward="false" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="-513">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownLoadServlet.java">
+    <entry file="file://$PROJECT_DIR$/sql/user.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="152">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc049f1e-3795-4264-8309-c4a1a63c48e3/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_back/DownSaleInfoServlet.java">
+    <entry file="das://table:/2a83dc93/cc049f1e-3795-4264-8309-c4a1a63c48e3/easymall.orderitem">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/2a83dc93/cc049f1e-3795-4264-8309-c4a1a63c48e3/easymall.orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/2a83dc93/cc049f1e-3795-4264-8309-c4a1a63c48e3/easymall.products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/2a83dc93/cc049f1e-3795-4264-8309-c4a1a63c48e3/easymall.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql/easymall.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="37" column="64" lean-forward="true" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+        <state relative-caret-position="-937">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1505731131980" expanded="true" signature="0:288" ph="/* Navicat M... " />
+            <marker date="1505731131980" expanded="true" signature="416:448" ph="DROP TABLE I... " />
+            <marker date="1505731131980" expanded="true" signature="450:802" ph="CREATE TABLE... orderitem" />
+            <marker date="1505731131980" expanded="true" signature="902:1540" ph="INSERT INTO `orderitem`... " />
+            <marker date="1505731131980" expanded="true" signature="1647:1676" ph="DROP TABLE I... " />
+            <marker date="1505731131980" expanded="true" signature="1678:2285" ph="CREATE TABLE... orders" />
+            <marker date="1505731131980" expanded="true" signature="2382:2808" ph="INSERT INTO `orders`... " />
+            <marker date="1505731131980" expanded="true" signature="2917:2948" ph="DROP TABLE I... " />
+            <marker date="1505731131980" expanded="true" signature="2950:3555" ph="CREATE TABLE... products" />
+            <marker date="1505731131980" expanded="true" signature="3654:9252" ph="INSERT INTO `products`... " />
+            <marker date="1505731131980" expanded="true" signature="9357:9384" ph="DROP TABLE I... " />
+            <marker date="1505731131980" expanded="true" signature="9386:9983" ph="CREATE TABLE... user" />
+            <marker date="1505731131980" expanded="true" signature="10078:10748" ph="INSERT INTO `user`... " />
+            <marker date="1505731131980" expanded="true" signature="10858:10894" ph="ALTER TABLE `user`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cc049f1e-3795-4264-8309-c4a1a63c48e3/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/mvn_easymall_Web_exploded/404.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/conf.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1847,24 +1750,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/PoiUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
+        <state relative-caret-position="304">
+          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resources/c3p0-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/EncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/AutoLoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/me/seaOf/utils/PoiUtilsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#373#383#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/utils/JDBCUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="843">
+          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="22" column="72" lean-forward="true" selection-start-line="22" selection-start-column="72" selection-end-line="22" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/seaOf/filter/PrivFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
