@@ -9,16 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/me/seaOf/dao/OrderDaoImpl.java" line="63" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaaeea56-9a7c-41fa-9a24-be17da6c19be" name="Default" comment="后台销售榜单的显示，技术难点：从orders中把数据搜索提取出来封装层saleInfo对象，使用sql语句中的设置列表名；使用sum计算过的数值在rs返回值中的类型时bigdecimal格式 无法直接转换成int型，所以rs.get方法时必须直接使用getInt()方法来获取数值。这时就需在执行方法之前做一个类型判断 int的类型判断应使用int.class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sql/easymall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/filter/PrivFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/admin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/user.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+    <list default="true" id="aaaeea56-9a7c-41fa-9a24-be17da6c19be" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/bean/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/UserDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/dao/UserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java" afterPath="$PROJECT_DIR$/src/main/java/me/seaOf/web_font/RegistServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1088,7 +1080,7 @@
       <workItem from="1505375324223" duration="13252000" />
       <workItem from="1505713344669" duration="189000" />
       <workItem from="1505713633050" duration="2196000" />
-      <workItem from="1505730296504" duration="4522000" />
+      <workItem from="1505730296504" duration="4689000" />
     </task>
     <task id="LOCAL-00001" summary="EasyMall前端主页静态页面">
       <created>1504698363691</created>
@@ -1265,7 +1257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1505734206941</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="增加用户管理权限，添加权限过滤器，更改user表，添加权限字段role，当过滤器检测到用户的role值为user时，用户将没有权限进入后台页面，当用户role权限为admin时可以进入后台页面。">
+      <created>1505734989348</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1505734989348</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1301,7 +1300,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167602000" />
+    <option name="totallyTimeSpent" value="167769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1317,7 +1316,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3564815" sideWeight="0.5121029" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3716475" sideWeight="0.51504296" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1328,7 +1327,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3716475" sideWeight="0.48789713" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3716475" sideWeight="0.484957" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3490683" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1411,7 +1410,8 @@
     <MESSAGE value="使用事务管理，删除用户的订单" />
     <MESSAGE value="使用易宝支付第三方插件，实现在线支付功能，及对应的页面" />
     <MESSAGE value="后台销售榜单的显示，技术难点：从orders中把数据搜索提取出来封装层saleInfo对象，使用sql语句中的设置列表名；使用sum计算过的数值在rs返回值中的类型时bigdecimal格式 无法直接转换成int型，所以rs.get方法时必须直接使用getInt()方法来获取数值。这时就需在执行方法之前做一个类型判断 int的类型判断应使用int.class" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台销售榜单的显示，技术难点：从orders中把数据搜索提取出来封装层saleInfo对象，使用sql语句中的设置列表名；使用sum计算过的数值在rs返回值中的类型时bigdecimal格式 无法直接转换成int型，所以rs.get方法时必须直接使用getInt()方法来获取数值。这时就需在执行方法之前做一个类型判断 int的类型判断应使用int.class" />
+    <MESSAGE value="增加用户管理权限，添加权限过滤器，更改user表，添加权限字段role，当过滤器检测到用户的role值为user时，用户将没有权限进入后台页面，当用户role权限为admin时可以进入后台页面。" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加用户管理权限，添加权限过滤器，更改user表，添加权限字段role，当过滤器检测到用户的role值为user时，用户将没有权限进入后台页面，当用户role权限为admin时可以进入后台页面。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
