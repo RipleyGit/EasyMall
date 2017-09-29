@@ -40,7 +40,7 @@ public class DownSaleInfoServlet extends HttpServlet {
         response.setContentType("text/html;charset=gbk");
         response.setHeader("Content-Disposition","attachment;filename="+fname);
         OutputStream out = response.getOutputStream();
-        Workbook wb = PoiUtils.getWorkbook(list,new SaleInfo());
+        Workbook wb = PoiUtils.getWorkbook(list,SaleInfo.class);
         wb.write(out);
         out.close();
     }

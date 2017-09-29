@@ -21,13 +21,12 @@ public class PoiUtils {
 
     private PoiUtils(){
     }
-    public static Workbook getWorkbook(List list,Object obj){
+    public static Workbook getWorkbook(List list,Class clazz){
         //创建工作簿对象
         Workbook wb = new XSSFWorkbook();
         CreationHelper createHelper = wb.getCreationHelper();
         int line = 0;
         Row row = null;
-        Class clazz = obj.getClass();
         Sheet sheet = wb.createSheet(clazz.getSimpleName());
         Field[] fields = clazz.getDeclaredFields();
         row = sheet.createRow(0);

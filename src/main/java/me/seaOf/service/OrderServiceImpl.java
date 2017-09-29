@@ -1,6 +1,5 @@
 package me.seaOf.service;
 
-import com.sun.beans.util.Cache;
 import me.seaOf.bean.*;
 import me.seaOf.dao.OrderDao;
 import me.seaOf.dao.ProdDao;
@@ -76,7 +75,6 @@ public class OrderServiceImpl implements OrderService {
 
 
 
-    @Override
     public void deleteOrderById(String oid) throws MsgException {
         //根据订单id查询订单详情
         Order order = order_dao.findOrderById(oid);
@@ -102,23 +100,19 @@ public class OrderServiceImpl implements OrderService {
         order_dao.deleteOrderById(oid);
     }
 
-    @Override
     public Order findOrderByOid(String oid) {
         return order_dao.findOrderById(oid);
     }
 
-    @Override
     public void updatePayStateByOid(String r6_order, int state) {
         order_dao.updatePayStateByOid( r6_order, state);
     }
 
-    @Override
     public List<SaleInfo> finSaleInfos() {
         return order_dao.findSaleInfos();
     }
 
 
-    @Override
     public Order findOrderById(String oid) {
         return order_dao.findOrderById(oid);
     }

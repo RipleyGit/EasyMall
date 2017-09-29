@@ -7,10 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>mvn-easymall Maven Webapp</name>
   <url>http://maven.apache.org</url>
-    <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
-    </plugin>
+
   <dependencies>
     <!--junit4测试依赖包-->
     <dependency>
@@ -26,6 +23,17 @@
       <version>3.0-alpha-1</version>
       <scope>provided</scope>
     </dependency>
+      <!-- Mybatis -->
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis</artifactId>
+          <version>3.2.8</version>
+      </dependency>
+      <dependency>
+          <groupId>org.mybatis</groupId>
+          <artifactId>mybatis-spring</artifactId>
+          <version>1.2.2</version>
+      </dependency>
     <!-- 使用C3P0对MySQL连接 -->
     <dependency>
       <groupId>c3p0</groupId>
@@ -73,6 +81,8 @@
           <version>3.10.1</version>
       </dependency>
   </dependencies>
+
+
     <build>
         <finalName>mvn-easymall</finalName>
         <resources>
@@ -84,6 +94,26 @@
                 </includes>
             </resource>
         </resources>
+        <plugins>
+            <!-- Tomcat 插件配置 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <!-- 使用内置的模拟Tomcat服务器 -->
+                    <path>/</path>
+                    <uriEncoding>UTF-8</uriEncoding>
+                    <port>8090</port>
+                    <mode>context</mode>
+                    <contextReloadable>true</contextReloadable>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
